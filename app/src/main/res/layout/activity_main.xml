@@ -1,55 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="#F5F5F5"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:padding="20dp">
 
-    <!-- Título do Aplicativo -->
     <TextView
-        android:id="@+id/textViewTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lista de Tarefas"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="24dp"/>
-
-    <!-- Campo para adicionar uma nova tarefa -->
-    <EditText
-        android:id="@+id/editTextTask"
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textViewTitle"
-        android:layout_toStartOf="@+id/buttonAddTask"
-        android:layout_marginEnd="8dp"
-        android:hint="Digite uma nova tarefa"
-        android:inputType="text"
-        android:padding="12dp"
-        android:background="@drawable/edit_text_background" />
+        android:text="Resultado aparecerá aqui"
+        android:textSize="18sp"
+        android:padding="10dp" />
 
-    <!-- Botão para adicionar a tarefa (com a cor alterada) -->
     <Button
-        android:id="@+id/buttonAddTask"
+        android:id="@+id/btnTestar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textViewTitle"
-        android:layout_alignParentEnd="true"
-        android:text="Add"
-        android:backgroundTint="#E91E63"
-        android:textColor="@android:color/white"/>
-
-    <!-- Lista que vai mostrar as tarefas -->
-    <ListView
-        android:id="@+id/listViewTasks"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/editTextTask"
-        android:layout_marginTop="16dp" />
-
-</RelativeLayout>
-
+        android:text="Rodar Revisão" />
+</LinearLayout>
